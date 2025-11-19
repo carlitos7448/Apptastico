@@ -1,118 +1,239 @@
+/* REGLAS GENERALES */
 * {
-    margin: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 
+   SECCIÓN 1 — HERO
+ */
 
 .contenedor1 {
     background-color: rgb(82, 87, 91);
+    padding-bottom: 100px;
 }
 
+/* NAV */
 .t1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 50px;
-}
-
-nav .estar {
-    border: 1px solid black;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
-    background-color: rgb(68, 66, 77);
-    width: fit-content;
-    border-radius: 40px;
-    height: 10px;
-    color: white;
-}
-
-.estar {
-    color: black;
-    font-size: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
     font-size: 20px;
 }
 
+nav .estar {
+    background-color: rgb(68, 66, 77);
+    padding: 12px 25px;
+    border-radius: 40px;
+}
+
+/* HERO CONTENT */
 .t2 {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 70px;
-    padding-left: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-.t2 img {
-    width: 500px;
-}
-
-.we {
-    width: 550px;
-    padding-bottom: 20px;
-    padding-top: 60px;
+.img2 img {
+    width: 420px;
 }
 
 .we h1 {
-    font-size: 60px;
     color: white;
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
-.we p {
-    font-size: 20px;
-    color: white;
-}
-
+.we p,
 .p2 p {
-    font-size: 20px;
-    color: rgb(131, 130, 130);
-}
-
-.p2 {
-    width: 550px;
-    padding-bottom: 70px;
-}
-
-.dos {
-    padding-left: 120px;
-}
-
-.dos img {
-    width: 20px;
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .tres {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
 }
 
 button {
-    border: 1px solid rgb(46, 66, 179);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-    border-radius: 30px;
-    font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-
+    background-color: rgb(46, 66, 179);
     color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .tres a {
     color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.imagenes img {
-    width: 70px;
+.tres img {
+    width: 16px;
+}
+
+
+/* 
+   SECCIÓN 2 — LOGOS
+ */
+
+.logos {
+    background-color: #eee;
+    padding: 40px 0;
+}
+
+.logos-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.logos-contenedor img {
+    width: 90px;
+    opacity: 0.5;
+}
+
+
+/* 
+   SECCIÓN 3 — FEATURES
+*/
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    text-align: center;
+    width: 260px;
+}
+
+.feature img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+
+/* 
+   SECCIÓN 4 — SELECTED PROJECTS
+ */
+
+.projects {
+    padding: 60px;
+    text-align: center;
+}
+
+/* Títulos con icono */
+.titulo-con-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.icon-projects,
+.icon-blog,
+.icon-twitter {
+    width: 28px;
+    height: 28px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-grid img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/* 
+   SECCIÓN 5 — BLOG + TWITTER
+*/
+
+.blog-twitter {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 60px;
+    background: #fff;
+}
+
+.blog {
+    width: 400px;
+}
+
+.blog .entrada {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.blog img {
+    width: 90px;
+}
+
+.older {
+    color: rgb(46, 66, 179);
+    cursor: pointer;
+}
+
+.twitter {
+    width: 400px;
+}
+
+.follow {
+    color: rgb(46, 66, 179);
+    cursor: pointer;
+}
+
+
+/* FOOTER*/
+
+.footer {
+    background-color: #ddd;
+    padding: 40px;
+    text-align: center;
+}
+
+.social img {
+    width: 28px;
+    margin: 0 10px;
 }
